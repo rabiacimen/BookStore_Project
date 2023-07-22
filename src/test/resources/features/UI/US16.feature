@@ -19,7 +19,7 @@ Feature:US16
     When Admin  sayfanin solundaki Books butonuna tiklar
     When Admin  acilan sayfadaki herhangi bir kitaba tiklar
     When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
-    When Admin açılan sayfadaki "Built-In" özelliğinin "Built In" olduğunu teyit eder.
+    When Admin açılan sayfadaki Built-In özelliğinin Built In olduğunu teyit eder.
     And Admin seçilen kitabın altında  uyari mesajini görüntüler.
 
   Scenario:US16_TC03_Update islemi testi
