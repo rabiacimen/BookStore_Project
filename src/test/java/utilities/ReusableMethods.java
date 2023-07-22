@@ -199,4 +199,14 @@ public class ReusableMethods {
         JavascriptExecutor js = (JavascriptExecutor) Driver.getDriver();
         js.executeScript("arguments[0].scrollIntoView(true);", waitForVisibility(element, 5));
     }
+
+    /////////
+    public static void login(String email, String password){
+        LoginPage loginPage = new LoginPage();
+        loginPage.login_email_address.sendKeys(email);
+        loginPage.login_password.sendKeys(password);
+        loginPage.login_submit.click();
+    }
+
+    ///////
 }
