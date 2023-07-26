@@ -20,17 +20,21 @@ public class US02 {
     HomePage homepage;
     LibraryPage librarypage;
     Actions action = new Actions(Driver.getDriver());
+    String libHomeUrl="https://www.diligentlibraries.com/library";
+    List<WebElement>authorsItems= librarypage.authorsList;
 
     @Given("kullanıcı başarılı bir şekilde login olur")
     public void kullanıcı_başarılı_bir_şekilde_login_olur() {
         loginpage = new LoginPage();
         homepage= new HomePage();
+        librarypage=new LibraryPage();
         Driver.getDriver().get(ConfigReader.getProperty("url"));
         loginpage.signin_button.click();
         loginpage.login_email_address.sendKeys("bookstore35@gmail.com");
         loginpage.login_password.sendKeys("Book35*");
         loginpage.login_submit.click();
         Assert.assertTrue(homepage.admin_name_dropdown.isDisplayed());
+        Driver.clickWithJS(librarypage.libraryLink);
 
     }
     @When("search kutusuna {int} karakter girer")
@@ -48,26 +52,100 @@ public class US02 {
     @When("Categories kutusunu görür")
     public void categories_kutusunu_görür() {
         librarypage=new LibraryPage();
-        Driver.clickWithJS(librarypage.libraryLink);
-        Assert.assertTrue(librarypage.categoriesDrop.isDisplayed());}
+        Assert.assertTrue(librarypage.categoriesLink.isDisplayed());}
     @When("Categories kutusuna tıklar")
     public void categories_kutusuna_tıklar() {
-        librarypage.categoriesDrop.click();
+        librarypage.categoriesLink.click();
     }
     @When("açılır listeden herhangi bir seçeneğe tıklar")
     public void açılır_listeden_herhangi_bir_seçeneğe_tıklar() {
-        Assert.assertEquals("https://www.diligentlibraries.com/library",Driver.getDriver().getCurrentUrl());
+        Assert.assertEquals(libHomeUrl,Driver.getDriver().getCurrentUrl());
         List<WebElement> categoriesItems = librarypage.categoriesList;
         for (WebElement w : categoriesItems) {
             w.click();
             break;
         }
-    }
-    @Then("sonuçların ekranda listelendiğini doğrular")
+    }@Then("sonuçların ekranda listelendiğini doğrular")
     public void sonuçların_ekranda_listelendiğini_doğrular() {
-        String cat="cat=";
-        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains(cat));
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("cat="));
     }
+
+
+
+    @When("Publisher kutusunu görür")
+    public void publisher_kutusunu_görür() {
+        librarypage=new LibraryPage();
+        Assert.assertTrue(librarypage.publishersLink.isDisplayed());
+    }
+    @When("Publishers kutusuna tıklar")
+    public void publishers_kutusuna_tıklar() {
+        librarypage.publishersLink.click();
+    }
+    @When("açılır pub. listeden herhangi bir seçeneğe tıklar")
+    public void açılır_pub_listeden_herhangi_bir_seçeneğe_tıklar() {
+        Assert.assertEquals(libHomeUrl,Driver.getDriver().getCurrentUrl());
+        List<WebElement>publishersItems=librarypage.publishersList;
+        for(WebElement w: publishersItems){
+            w.click();
+            break;
+        }
+    }@Then("sonuçların  ekranda listelendiğini doğrular")
+    public void sonuçların_listelendiğini_doğrular() {
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("publisher="));
+    }
+
+
+
+
+    @When("Authors kutusunu görür")
+    public void authors_kutusunu_görür() {
+        librarypage=new LibraryPage();
+        Assert.assertTrue(librarypage.authorsLink.isDisplayed());}
+
+    @When("Authors kutusuna tıklar")
+    public void authors_kutusuna_tıklar() {
+        librarypage.authorsLink.click();}
+
+    @When("açılır authors listeden herhangi bir seçeneğe tıklar")
+    public void açılır_authors_listeden_herhangi_bir_seçeneğe_tıklar() {
+        Assert.assertEquals(libHomeUrl,Driver.getDriver().getCurrentUrl());
+
+
+        for(WebElement w: authorsItems){
+            w.click();
+            break;
+        }
+    }@Then("ekranda listelendiğini doğrular")
+    public void ekranda_listelendiğini_doğrular() {
+        Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("author="));
+    }
+
+
+
+    @When("herhangi bir filtre ile kitap listeler")
+    public void herhangi_bir_filtre_ile_kitap_listeler() {
+    librarypage=new LibraryPage();
+    librarypage.authorsLink.click();
+    for(WebElement w: authorsItems){
+        if(w.getText().contains("Adolf Hitler")){
+            w.click();
+        }
+    }
+    }
+    @Then("Kitapların ekranda sayfa numarası ile listelendiğini doğrular")
+    public void kitapların_ekranda_sayfa_numarası_ile_listelendiğini_doğrular() {
+
+    }
+
+
+
+
+
+
+
+
+
+
 
 
 
