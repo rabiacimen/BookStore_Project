@@ -2,6 +2,8 @@ package stepdefinitions.UI;
 
 import io.cucumber.java.en.*;
 import org.junit.Assert;
+import org.openqa.selenium.JavascriptExecutor;
+import org.openqa.selenium.Keys;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.interactions.Actions;
 import pages.HomePage;
@@ -18,8 +20,7 @@ public class US02 {
 
     LoginPage loginpage;
     HomePage homepage;
-    LibraryPage librarypage;
-    Actions action = new Actions(Driver.getDriver());
+    LibraryPage librarypage= new LibraryPage();
     String libHomeUrl="https://www.diligentlibraries.com/library";
     List<WebElement>authorsItems= librarypage.authorsList;
 
@@ -27,7 +28,6 @@ public class US02 {
     public void kullanıcı_başarılı_bir_şekilde_login_olur() {
         loginpage = new LoginPage();
         homepage= new HomePage();
-        librarypage=new LibraryPage();
         Driver.getDriver().get(ConfigReader.getProperty("url"));
         loginpage.signin_button.click();
         loginpage.login_email_address.sendKeys("bookstore35@gmail.com");
@@ -51,7 +51,6 @@ public class US02 {
 
     @When("Categories kutusunu görür")
     public void categories_kutusunu_görür() {
-        librarypage=new LibraryPage();
         Assert.assertTrue(librarypage.categoriesLink.isDisplayed());}
     @When("Categories kutusuna tıklar")
     public void categories_kutusuna_tıklar() {
@@ -74,7 +73,7 @@ public class US02 {
 
     @When("Publisher kutusunu görür")
     public void publisher_kutusunu_görür() {
-        librarypage=new LibraryPage();
+
         Assert.assertTrue(librarypage.publishersLink.isDisplayed());
     }
     @When("Publishers kutusuna tıklar")
@@ -129,25 +128,18 @@ public class US02 {
     for(WebElement w: authorsItems){
         if(w.getText().contains("Adolf Hitler")){
             w.click();
+            break;
         }
     }
+    Assert.assertTrue(Driver.getDriver().getCurrentUrl().contains("Hitler"));
     }
     @Then("Kitapların ekranda sayfa numarası ile listelendiğini doğrular")
     public void kitapların_ekranda_sayfa_numarası_ile_listelendiğini_doğrular() {
-
+        JavascriptExecutor jsExecutor = (JavascriptExecutor) Driver.getDriver();
+        jsExecutor.executeScript("window.scrollTo(0, document.body.scrollHeight);");
+        Assert.assertTrue(librarypage.paginationButton.isDisplayed());
+    }
     }
 
 
 
-
-
-
-
-
-
-
-
-
-
-
-}
