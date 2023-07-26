@@ -32,6 +32,9 @@ public class LibraryPage {
     @FindBy(xpath = "//*[@class='dropdown-item']")
     public List<WebElement>authorsList;
 
+    @FindBy(xpath = "//*[@class='pagination']")
+    public WebElement paginationButton;
+
 
 
 
