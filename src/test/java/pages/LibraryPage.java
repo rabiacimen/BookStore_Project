@@ -11,14 +11,26 @@ public class LibraryPage {
     public LibraryPage(){
         PageFactory.initElements(Driver.getDriver(),this);}
 
-    @FindBy(xpath = "//*[text()='Library']")
+    @FindBy(xpath = "//a[text()='Library']")
     public WebElement libraryLink;
 
     @FindBy(xpath = "(//button[@id='dropdown-basic-button'])[1]")
-    public WebElement categoriesDrop;
+    public WebElement categoriesLink;
 
     @FindBy(xpath = "//a[@class='dropdown-item']")
     public List<WebElement> categoriesList;
+
+    @FindBy(xpath = "(//button[@id='dropdown-basic-button'])[3]")
+    public WebElement publishersLink;
+
+    @FindBy(xpath = "//*[@class='dropdown-item']")
+    public List<WebElement>publishersList;
+
+    @FindBy(xpath = "(//button[@id='dropdown-basic-button'])[2]")
+    public WebElement authorsLink;
+
+    @FindBy(xpath = "//*[@class='dropdown-item']")
+    public List<WebElement>authorsList;
 
 
 
