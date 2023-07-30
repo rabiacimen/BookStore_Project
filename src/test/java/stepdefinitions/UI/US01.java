@@ -2,6 +2,11 @@ package stepdefinitions.UI;
 
 import io.cucumber.java.en.Given;
 import io.cucumber.java.en.Then;
+import org.junit.Assert;
+import pages.HomePage;
+import pages.LoginPage;
+import utilities.ConfigReader;
+import utilities.Driver;
 
 public class US01 {
 
@@ -16,14 +21,19 @@ AC4
 Feature Books alanında 5 adet kitap görüntilenmeli ve sağa sola oklarla kitaplar arasında geçiş yapılmalıdır.
 AC5
  */
-
+HomePage homePage=new HomePage();
     @Given("Search butonuna iki veya daha az karakter girilir")
     public void search_butonuna_iki_veya_daha_az_karakter_girilir() {
+
+        HomePage homePage= new HomePage();
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
+      homePage.searchButton.sendKeys("ab");
 
     }
 
     @Then("Search butonunun aktif olmadigi assert edilir")
     public void search_butonunun_aktif_olmadigi_assert_edilir() {
+        Assert.assertFalse( homePage.searchButton.isDisplayed());
 
     }
 

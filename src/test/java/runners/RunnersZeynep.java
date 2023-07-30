@@ -19,7 +19,7 @@ import org.junit.runner.RunWith;
         features = "./src/test/resources/features",//features folder path
         glue = {"stepdefinitions"},   //stepdefinitions path
         tags = "@us01",
-        dryRun =true
+        dryRun =false
 )
 
 public class RunnersZeynep {
