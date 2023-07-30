@@ -16,6 +16,13 @@ public class HomePage {
     @FindBy(xpath = "//a[contains(text(),'Admin Panel')]")
     public WebElement admin_panel;
 
+    @FindBy(xpath = "//input[@placeholder='Name or Author or ISBN or Publisher']")
+    public WebElement searchbox;
+
+    @FindBy(xpath = "//button[@value='Submit']")
+    public WebElement searchButton;
+
+
 
 
 
