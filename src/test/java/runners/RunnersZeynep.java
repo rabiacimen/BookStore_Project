@@ -18,22 +18,9 @@ import org.junit.runner.RunWith;
         monochrome = true,//raporlarin consoleda okunakli sekilde cikmasi icin
         features = "./src/test/resources/features",//features folder path
         glue = {"stepdefinitions"},   //stepdefinitions path
-        tags = "@End2End",
-        dryRun =false
+        tags = "@us01",
+        dryRun =true
 )
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 public class RunnersZeynep {
 
