@@ -24,7 +24,6 @@ Feature:US16
     And Admin seçilen kitabın altında  uyari mesajini görüntüler.
 
   Scenario:US16_TC03_Update islemi testi
-  When Admin  acilan listede Admin Panel'i secer
   When Admin  sayfanin solundaki Books butonuna tiklar
   When Admin  acilan sayfadaki herhangi bir kitaba tiklar
   And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
@@ -34,11 +33,10 @@ Feature:US16
   And Admin basarili bir sekilde update islemini gerceklestirir.
 
   Scenario:US16_TC04_Zorunlu olmayan panellerin testi
-  When Admin  acilan listede Admin Panel'i secer
   When Admin  sayfanin solundaki Books butonuna tiklar
-  When Admin  acilan sayfadaki herhangi bir kitaba tiklar
+  When Admin  acilan sayfadaki bir kitaba kitaba tiklar
   When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
-  Then Admin Built-in panelinin Not-Built oldugunu dogrular
+  Then Admin Built/in panelinin Not-Built oldugunu dogrular
   Then Admin Page Count panelini bos birakır.
   And Admin Page Count panelini bos birakınca hata mesajı almaz.
   And Admin Publish Year panelini bos birakir.
@@ -47,9 +45,8 @@ Feature:US16
   And Admin Page Count ve Publish Year bölümünü boş bıraktığında hata mesajı almaz.
 
   Scenario:US16_TC05_Zorunlu olmayan panellerin testi
-  When Admin  acilan listede Admin Panel'i secer
   When Admin  sayfanin solundaki Books butonuna tiklar
-  When Admin  acilan sayfadaki herhangi bir kitaba tiklar
+  When Admin  acilan sayfadaki bir kitaba kitaba tiklar
   When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
   Then Admin Built/in panelinin Not-Built oldugunu dogrular
   And Admin Book Author,Book Publisher,Book Category,Featured,Active,Built-In panellerinin default degerler aldigini dogrular."
@@ -61,14 +58,12 @@ Feature:US16
   And Admin "ISBN" paneli altında uyarı mesajı göründüğünü doğrular.
 
   Scenario:US16_TC06_Not-Build ozelligi testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     When Admin  acilan sayfadaki herhangi bir kitaba tiklar
     And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
     And Admin Built/in panelinde Not-Built secili oldugunu dogrular
 
   Scenario:US16_TC07_Update isleminden sonra PopUp gorunurluk testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     When Admin  acilan sayfadaki herhangi bir kitaba tiklar
     And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
@@ -80,7 +75,6 @@ Feature:US16
     And Admin sayfada popup mesajını görüntüler.
 
   Scenario:US16_TC08_Cancel butonu testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     When Admin  acilan sayfadaki herhangi bir kitaba tiklar
     And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
@@ -97,7 +91,6 @@ Feature:US16
     And Admin Build-In secili iken delete butonunun olmadigini dogrular
 
   Scenario:US16_TC10_Delete butonu ve cancel butonu testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     When Admin  acilan sayfadaki herhangi bir kitaba tiklar
     And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
@@ -109,7 +102,6 @@ Feature:US16
     And Admin cancel butonuna tiklar ve silme islemini iptal eder.
 
   Scenario:US16_TC11_Kitap silme testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     When Admin  acilan sayfadaki herhangi bir kitaba tiklar
     And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular.
@@ -120,7 +112,6 @@ Feature:US16
     And Admin silindigine dair popUp mesajini goruntuler.
 
   Scenario:US16_TC12_Silinen kitap testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     And Admin bulundugu sayfada arama kutusunun varligini dogrular
     And Admin arama kutusuna "Anna Karenina" yazar
@@ -128,7 +119,6 @@ Feature:US16
     And Admin silinen kitabin sayfada bulunmadigini goruntuler
 
   Scenario:US16_TC13_Loan Form testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     And Admin "Son Ada" isimli kitaba tiklar.
     And Admin sayfada Loaning History bolumunun varligini dogrular
@@ -136,14 +126,12 @@ Feature:US16
     And Admin Loan Form(Edit Loan) bolumunun varligini dogrular.
 
   Scenario:US16_TC14_Loan Form testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     And Admin "Nar Agaci" isimli kitaba tiklar.
     And Admin sayfada Loaning History bolumunde user bulunmadigini dogrular
     And Admin sayfada Loan Form olmadigini dogrular
 
   Scenario:US16_TC15  "set as Returned " veya iade tarihlerinin varligi testi
-    When Admin  acilan listede Admin Panel'i secer
     When Admin  sayfanin solundaki Books butonuna tiklar
     And Admin "Son Ada" isimli kitaba tiklar.
     And Admin sayfada Loaning History bolumunun varligini dogrular

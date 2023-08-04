@@ -16,7 +16,7 @@ public class BooksPage {
     @FindBy(xpath = "//span[contains(text(),'Book Edit')]")
     public WebElement book_edit_page;
 
-    @FindBy(xpath = "(//div[@class='row'])[3]")
+    @FindBy(xpath = "//fieldset")
     public WebElement kitap_bilgi_paneli;
 
     @FindBy (xpath = "//*[@name='name']")
@@ -25,8 +25,14 @@ public class BooksPage {
     @FindBy (xpath = "//*[@name='isbn']")
     public WebElement isbn_box;
 
-    @FindBy (xpath = "//*[@name='pageCount']")
+    @FindBy (xpath = "//input[@value='123-45-36568-79-8']")
+    public WebElement isbn_value;
+
+    @FindBy (xpath = "(//input[@type='number'])[1]")
     public WebElement page_count_box;
+
+    @FindBy (xpath = "//div[@class='invalid-feedback']")
+    public WebElement invalid_feedback;
 
     @FindBy (xpath = "//*[@name='publishDate']")
     public WebElement publish_date_box;

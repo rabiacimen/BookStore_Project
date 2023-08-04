@@ -1,0 +1,1217 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<testsuite errors="0" failures="25" name="io.cucumber.core.plugin.JUnitFormatter" skipped="0" tests="26" time="397.001">
+    <testcase classname="US16" name="US16_TC01_Secili kitap bilgilerinin doluluk testi" time="12.012">
+        <system-out>
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................passed
+Given Admin basarili bir sekilde giris yapar................................passed
+Given Admin ismin oldugu butona tiklar......................................passed
+When Admin  acilan listede Admin Panel'i secer..............................passed
+When Admin  sayfanin solundaki Books butonuna tiklar........................passed
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................passed
+When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular..............passed
+And Admin kitabın sağında bilgilerin bulunduğu panellerin varlığını doğrular..passed
+And Admin  secili kitaba dair bilgilerin dolu oldugunu dogrular.............passed
+]]>
+        </system-out>
+    </testcase>
+    <testcase classname="US16" name="US16_TC02_Built-in ozelligi testi" time="15.319">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular..............skipped
+When Admin açılan sayfadaki Built-In özelliğinin Built In olduğunu teyit eder..skipped
+And Admin seçilen kitabın altında  uyari mesajini görüntüler................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC03_Update islemi testi" time="15.276">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular...............skipped
+Then Admin Built-in panelinin Not-Built oldugunu dogrular...................skipped
+Then Admin"Book Category" panelini editler..................................skipped
+Then Admin "update" butonuna tıklar.........................................skipped
+And Admin basarili bir sekilde update islemini gerceklestirir...............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC04_Zorunlu olmayan panellerin testi" time="15.227">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki bir kitaba kitaba tiklar.......................skipped
+When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular..............skipped
+Then Admin Built/in panelinin Not-Built oldugunu dogrular...................skipped
+Then Admin Page Count panelini bos birakır..................................skipped
+And Admin Page Count panelini bos birakınca hata mesajı almaz...............skipped
+And Admin Publish Year panelini bos birakir.................................skipped
+And Admin Publish year panelini boş bırakınca hata mesajı almaz.............skipped
+And Admin Page Count ve Publish Year panellerinin her ikisini bos birakir...skipped
+And Admin Page Count ve Publish Year bölümünü boş bıraktığında hata mesajı almaz..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC05_Zorunlu olmayan panellerin testi" time="15.377">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki bir kitaba kitaba tiklar.......................skipped
+When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular..............skipped
+Then Admin Built/in panelinin Not-Built oldugunu dogrular...................skipped
+And Admin Book Author,Book Publisher,Book Category,Featured,Active,Built-In panellerinin default degerler aldigini dogrular.".skipped
+And Admin "Name of Book" panelini boş bırakır...............................skipped
+And Admin "Name of Book" paneli altında uyarı mesajı göründüğünü doğrular...skipped
+And Admin "Shelf Code" panelini boş bırakır.................................skipped
+And Admin "Shelf Code" paneli altında uyarı mesajı göründüğünü doğrular.....skipped
+And Admin "ISBN" panelini boş bırakır.......................................skipped
+And Admin "ISBN" paneli altında uyarı mesajı göründüğünü doğrular...........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC06_Not-Build ozelligi testi" time="15.266">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular...............skipped
+And Admin Built/in panelinde Not-Built secili oldugunu dogrular.............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC07_Update isleminden sonra PopUp gorunurluk testi" time="15.333">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular...............skipped
+And Admin Built/in panelinde Not-Built secili oldugunu dogrular.............skipped
+And Admin değişikliik yapmak istediği panele tıklar.........................skipped
+And Admin seçilen panelde düzeltme yapar....................................skipped
+And Admin sayfanın sağ altındaki "update" butonunun varlığını doğrular......skipped
+And Admin "update" butonuna tıklar..........................................skipped
+And Admin sayfada popup mesajını görüntüler.................................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC08_Cancel butonu testi" time="15.226">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular...............skipped
+And Admin Built/in panelinde Not-Built secili oldugunu dogrular.............skipped
+And Admin Book Edit sayfasinda hicbir degisiklik yapmadan cancel butonuna tiklar..skipped
+And Admin cancel butonuna tikladiginda Books sayfasina dondugunu dogrular...skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC09_Build/In secili oldugunda Delete butonunun varligi testi" time="15.311">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+When Admin açılan sayfanın Book Edit sayfası olduğunu doğrular..............skipped
+When Admin açılan sayfadaki "Built-In" özelliğinin "Built In" olduğunu teyit eder..skipped
+And Admin Build-In secili iken delete butonunun olmadigini dogrular.........skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC10_Delete butonu ve cancel butonu testi" time="15.312">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular...............skipped
+And Admin Built/in panelinde Not-Built secili oldugunu dogrular.............skipped
+And Admin delete butonunun varligini dogrular...............................skipped
+And Admin delete butonuna tiklar............................................skipped
+And Admin delete butonuna tikladiginda onay iletisim kutusunu goruntuler....skipped
+And Admin "Cancel" butonunun görünür olduğunu doğrular......................skipped
+And Admin cancel butonuna tiklar ve silme islemini iptal eder...............skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC11_Kitap silme testi" time="15.282">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin açılan sayfanın Book Edit sayfası olduğunu doğrular...............skipped
+And Admin delete butonunun varligini dogrular...............................skipped
+And Admin delete butonuna tiklar............................................skipped
+And Admin delete butonuna tikladiginda onay iletisim kutusunu goruntuler....skipped
+And Admin Ok butonuna tiklar................................................skipped
+And Admin silindigine dair popUp mesajini goruntuler........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC12_Silinen kitap testi" time="15.303">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+And Admin bulundugu sayfada arama kutusunun varligini dogrular..............skipped
+And Admin arama kutusuna "Anna Karenina" yazar..............................skipped
+And Admin arama butonuna tiklar.............................................skipped
+And Admin silinen kitabin sayfada bulunmadigini goruntuler..................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC13_Loan Form testi" time="15.268">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+And Admin "Son Ada" isimli kitaba tiklar....................................skipped
+And Admin sayfada Loaning History bolumunun varligini dogrular..............skipped
+And Admin Loaning History bolumunde bulunan userlardan birinin uzerine tiklar..skipped
+And Admin Loan Form(Edit Loan) bolumunun varligini dogrular.................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC14_Loan Form testi" time="15.288">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+And Admin "Nar Agaci" isimli kitaba tiklar..................................skipped
+And Admin sayfada Loaning History bolumunde user bulunmadigini dogrular.....skipped
+And Admin sayfada Loan Form olmadigini dogrular.............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC15  &quot;set as Returned &quot; veya iade tarihlerinin varligi testi" time="16.08">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+And Admin "Son Ada" isimli kitaba tiklar....................................skipped
+And Admin sayfada Loaning History bolumunun varligini dogrular..............skipped
+And Admin Loaning History bolumunde Return Date başlığının altında "set as Returned" yazısının veya tarihlerin  varlığını doğrular.".skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC16_Loan Form &quot;Set as returned&quot; editi" time="15.239">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin sayfada Loaning History bolumunun varligini dogrular..............skipped
+And Admin sayfada  "set as Returned " yazisinin varligini dogrular..........skipped
+And Admin  sayfadaki  "set as Returned " yazisina tiklar....................skipped
+And Admin Loan Form(Edit Loan) bolumunun varligini dogrular.................skipped
+And Admin acilan formda Return Date'i alis tarihi ile teslim tarihi arasinda bir tarih girer.skipped
+And Admin update butonuna tiklar............................................skipped
+And Admin kitabi iade ettigine dair PopUp mesaji alir.......................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC17_Loan Form &quot;Set as returned&quot; negatif test" time="15.241">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin sayfada Loaning History bolumunun varligini dogrular..............skipped
+And Admin sayfada  "set as Returned " yazisinin varligini dogrular..........skipped
+And Admin  sayfadaki  "set as Returned " yazisina tiklar....................skipped
+And Admin Loan Form(Edit Loan) bolumunun varligini dogrular.................skipped
+And Admin acilan formda Return Date'e alis tarihinden once bir tarih girer..skipped
+And Admin update butonuna tiklar............................................skipped
+And Admin yanlis tarih girdigine dair hata mesaji alir......................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance0(Native Method)
+	at java.base/jdk.internal.reflect.NativeConstructorAccessorImpl.newInstance(NativeConstructorAccessorImpl.java:62)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC18_Loan Form &quot;Set as returned&quot; negatif test" time="15.233">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin sayfada Loaning History bolumunun varligini dogrular..............skipped
+And Admin sayfada  "set as Returned " yazisinin varligini dogrular..........skipped
+And Admin  sayfadaki  "set as Returned " yazisina tiklar....................skipped
+And Admin Loan Form(Edit Loan) bolumunun varligini dogrular.................skipped
+And Admin acilan formda Return Date'e teslim tarihinden sonra bir tarih girer.skipped
+And Admin update butonuna tiklar............................................skipped
+And Admin gec teslim ettigine dair uyari mesaji alir........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC19_&quot;Book this book for below User&quot; alaninin varligi testi" time="15.694">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin sayfada Loaning History bolumunun varligini dogrular..............skipped
+And Admin  sayfada "set as Returned " yazisinin olmadigini dogrular.........skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC20_User Search'te tek karakter testi" time="15.237">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına tek karakter girer............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Search User alaninin altinda uyari mesaji alir....................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC21_User Search'te iki karakter testi" time="15.31">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına iki karakter girer............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Member butonuna tiklar............................................skipped
+And Admin ilgili userlarin member dropdownuna geldigini dogrular............skipped
+And Admin Member alanindan istedigi useri secer.............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC22_User Search'te uc karakter testi" time="15.233">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına uc karakter girer.............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Member butonuna tiklar............................................skipped
+And Admin ilgili userlarin member dropdownuna geldigini dogrular............skipped
+And Admin Member alanindan istedigi useri secer.............................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC23_Notes alaninda sinir degerin altinda karakter girilebilmesi testi" time="15.427">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına uc karakter girer.............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Member butonuna tiklar............................................skipped
+And Admin ilgili userlarin member dropdownuna geldigini dogrular............skipped
+And Admin Member alanindan istedigi useri secer.............................skipped
+And Admin Notes alanına sinir degerin altinda karakter girer................skipped
+And Admin Notes kutusunun cercevesinin yesil oldugunu dogrular..............skipped
+And Admin Book This Book butonuna tiklar....................................skipped
+And Admin kitabin ilgili usera atandigini dogrular..........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC24_Notes alaninda sinir degerde karakter girilebilmesi testi" time="15.273">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına uc karakter girer.............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Member butonuna tiklar............................................skipped
+And Admin ilgili userlarin member dropdownuna geldigini dogrular............skipped
+And Admin Member alanindan istedigi useri secer.............................skipped
+And Admin Notes alanına sinir degerde karakter girer........................skipped
+And Admin Notes kutusunun cercevesinin yesil oldugunu gorur.................skipped
+And Admin Book This Book butonuna tiklar....................................skipped
+And Admin kitabin ilgili usera atandigini dogrular..........................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC25_Notes alaninda sinir degerin ustunde karakter girilebilmesi testi" time="15.306">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına uc karakter girer.............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Member butonuna tiklar............................................skipped
+And Admin ilgili userlarin member dropdownuna geldigini dogrular............skipped
+And Admin Member alanindan istedigi useri secer.............................skipped
+And Admin Notes alanına sinir degerin ustunde karakter girer................skipped
+And Admin Notes kutusunun cercevesinin kirmizi oldugunu gorur...............skipped
+And Admin Book this Book butonuna tiklanmadigini dogrular...................skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+    <testcase classname="US16" name="US16_TC26_Son teslim tarihinin atanmasi testi" time="15.503">
+        <failure message="no such element: Unable to locate element: {&quot;method&quot;:&quot;xpath&quot;,&quot;selector&quot;:&quot;//a[contains(text(),'Signin')]&quot;}&#10;  (Session info: chrome=114.0.5735.199)&#10;For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element&#10;Build info: version: '4.8.3', revision: 'e5e76298c3'&#10;System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'&#10;Driver info: org.openqa.selenium.chrome.ChromeDriver&#10;Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]&#10;Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}&#10;Session ID: a3efba502cd3f980f71f95de01dc38bb" type="org.openqa.selenium.NoSuchElementException">
+            <![CDATA[Given Admin belirtilen url'e gider..........................................passed
+Given Admin Signin butonuna tiklar..........................................failed
+Given Admin basarili bir sekilde giris yapar................................skipped
+Given Admin ismin oldugu butona tiklar......................................skipped
+When Admin  acilan listede Admin Panel'i secer..............................skipped
+When Admin  sayfanin solundaki Books butonuna tiklar........................skipped
+When Admin  acilan sayfadaki herhangi bir kitaba tiklar.....................skipped
+And Admin bulundugu sayfada "Book This book for below User" bolumunun varligini dogrular..skipped
+And Admin Search User alanına uc karakter girer.............................skipped
+And Admin Search butonuna tiklar............................................skipped
+And Admin Member butonuna tiklar............................................skipped
+And Admin ilgili userlarin member dropdownuna geldigini dogrular............skipped
+And Admin Member alanindan istedigi useri secer.............................skipped
+And Admin Notes alanına sinir degere uygun karakterde veri girer............skipped
+And Admin Book this Book butonuna tiklar....................................skipped
+And Admin popUp mesajini gorur..............................................skipped
+And Admin sayfayi yeniler...................................................skipped
+And Admin Loaning History bolumunun varligini dogrular......................skipped
+And Admin Expire Date basligi altinda teslim tarihinin otomatik olarak atandigini goruntuler.skipped
+
+StackTrace:
+org.openqa.selenium.NoSuchElementException: no such element: Unable to locate element: {"method":"xpath","selector":"//a[contains(text(),'Signin')]"}
+  (Session info: chrome=114.0.5735.199)
+For documentation on this error, please visit: https://selenium.dev/exceptions/#no_such_element
+Build info: version: '4.8.3', revision: 'e5e76298c3'
+System info: os.name: 'Windows 11', os.arch: 'amd64', os.version: '10.0', java.version: '11.0.16.1'
+Driver info: org.openqa.selenium.chrome.ChromeDriver
+Command: [a3efba502cd3f980f71f95de01dc38bb, findElement {using=xpath, value=//a[contains(text(),'Signin')]}]
+Capabilities {acceptInsecureCerts: false, browserName: chrome, browserVersion: 114.0.5735.199, chrome: {chromedriverVersion: 114.0.5735.90 (386bc09e8f4f..., userDataDir: C:\Users\rabia\AppData\Loca...}, goog:chromeOptions: {debuggerAddress: localhost:65181}, networkConnectionEnabled: false, pageLoadStrategy: normal, platformName: WINDOWS, proxy: Proxy(), se:cdp: ws://localhost:65181/devtoo..., se:cdpVersion: 114.0.5735.199, setWindowRect: true, strictFileInteractability: false, timeouts: {implicit: 0, pageLoad: 300000, script: 30000}, unhandledPromptBehavior: dismiss and notify, webauthn:extension:credBlob: true, webauthn:extension:largeBlob: true, webauthn:extension:minPinLength: true, webauthn:extension:prf: true, webauthn:virtualAuthenticators: true}
+Session ID: a3efba502cd3f980f71f95de01dc38bb
+	at jdk.internal.reflect.GeneratedConstructorAccessor20.newInstance(Unknown Source)
+	at java.base/jdk.internal.reflect.DelegatingConstructorAccessorImpl.newInstance(DelegatingConstructorAccessorImpl.java:45)
+	at java.base/java.lang.reflect.Constructor.newInstance(Constructor.java:490)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.createException(W3CHttpResponseCodec.java:200)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:133)
+	at org.openqa.selenium.remote.codec.w3c.W3CHttpResponseCodec.decode(W3CHttpResponseCodec.java:53)
+	at org.openqa.selenium.remote.HttpCommandExecutor.execute(HttpCommandExecutor.java:193)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.invokeExecute(DriverCommandExecutor.java:183)
+	at org.openqa.selenium.remote.service.DriverCommandExecutor.execute(DriverCommandExecutor.java:158)
+	at org.openqa.selenium.remote.RemoteWebDriver.execute(RemoteWebDriver.java:543)
+	at org.openqa.selenium.remote.ElementLocation$ElementFinder$2.findElement(ElementLocation.java:162)
+	at org.openqa.selenium.remote.ElementLocation.findElement(ElementLocation.java:60)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:352)
+	at org.openqa.selenium.remote.RemoteWebDriver.findElement(RemoteWebDriver.java:344)
+	at org.openqa.selenium.support.pagefactory.DefaultElementLocator.findElement(DefaultElementLocator.java:70)
+	at org.openqa.selenium.support.pagefactory.internal.LocatingElementHandler.invoke(LocatingElementHandler.java:39)
+	at com.sun.proxy.$Proxy27.click(Unknown Source)
+	at stepdefinitions.UI.US16.admin_signin_butonuna_tiklar(US16.java:31)
+	at ✽.Admin Signin butonuna tiklar(file:///C:/Users/rabia/IdeaProjects/BookStore_Project/./src/test/resources/features/UI/US16.feature:5)
+]]>
+        </failure>
+    </testcase>
+</testsuite>
