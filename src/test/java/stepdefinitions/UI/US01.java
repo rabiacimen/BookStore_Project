@@ -39,6 +39,9 @@ HomePage homePage=new HomePage();
 
     @Given("Search butonuna uc karakter girilir")
     public void search_butonuna_uc_karakter_girilir() {
+        HomePage homePage= new HomePage();
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
+        homePage.searchButton.sendKeys("abc");
 
     }
 
@@ -50,6 +53,9 @@ HomePage homePage=new HomePage();
 
     @Given("Search Book alanına otuz karakter girilir")
     public void search_book_alanına_karakter_girilir(Integer int1) {
+        HomePage homePage= new HomePage();
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
+        homePage.searchButton.sendKeys("abcdefvcdfresdxcvfrtgbnhyujmki");
 
     }
 
