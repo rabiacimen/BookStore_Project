@@ -26,7 +26,6 @@ HomePage homePage=new HomePage();
     public void search_butonuna_iki_veya_daha_az_karakter_girilir() {
 
         HomePage homePage= new HomePage();
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
       homePage.searchButton.sendKeys("ab");
 
     }
@@ -53,8 +52,7 @@ HomePage homePage=new HomePage();
 
     @Given("Search Book alanına otuz karakter girilir")
     public void search_book_alanına_karakter_girilir(Integer int1) {
-        HomePage homePage= new HomePage();
-        Driver.getDriver().get(ConfigReader.getProperty("url"));
+
         homePage.searchButton.sendKeys("abcdefvcdfresdxcvfrtgbnhyujmki");
 
     }
@@ -88,7 +86,8 @@ HomePage homePage=new HomePage();
 
     @Given("HomePage sayfasina gidilir")
     public void home_page_sayfasina_gidilir() {
-
+        HomePage homePage= new HomePage();
+        Driver.getDriver().get(ConfigReader.getProperty("url"));
     }
 
     @Then("Feature Books alanında bes adet kitap görüntilendigi assert edilir")
@@ -100,6 +99,10 @@ HomePage homePage=new HomePage();
         public void sağa_sola_oklarla_kitaplar_arasında_geçiş_yapıldigi_assert_edilir () {
 
         }
+    @Then("Close driver")
+    public void close_driver() {
+        Driver.closeDriver();
+    }
 
 
     }
